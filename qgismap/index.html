@@ -6,7 +6,7 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+        <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <style>
         html, body, #map {
@@ -22,7 +22,7 @@
         <div id="map" >
         </div>
         <script src="js/qgis2web_expressions.js"></script>
-        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+        <script src="http://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
         <script src="js/leaflet.pattern.js"></script>
         <script src="js/leaflet-hash.js"></script>
@@ -43,7 +43,8 @@
 		id: 'mapbox.light'
 		}).addTo(map);
        
-
+        function setBounds() {
+        }
         function pop_gadmap_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -300,7 +301,7 @@
         });
         bounds_group.addLayer(layer_gadmap_0);
         map.addLayer(layer_gadmap_0);
-
+        setBounds();
         </script>
     </body>
 </html>
